@@ -1,0 +1,15 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: arun-dep3
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: arun-dep3
+      labels:
+        app: arun-dep3
+    spec:
+      containers:
+      - image: arunvel1988/appv1
+        name: appv1
