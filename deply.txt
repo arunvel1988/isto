@@ -1,0 +1,16 @@
+kubectl apply -f arun-deployment.yaml --record
+
+
+
+kubectl rollout status deployment hello-deploy
+
+kubectl get deploy
+
+kubectl rollout history deployment hello-deploy
+
+kubectl get rs
+
+kubectl rollout undo deployment hello-deploy --to-revision=1
+
+
+kubectl get deploy hello-deploy
